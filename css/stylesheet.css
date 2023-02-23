@@ -1,3 +1,4 @@
+
 *{
     margin: 0%;
     padding: 0;
@@ -93,8 +94,7 @@ main{
     align-items: center;
     margin-bottom: 20px;
 }
-.sobre-min{
-}
+
 .sobre-min h1{
     font-size: 80px;
     color: var(--cor-texto);
@@ -179,3 +179,11 @@ div .barra-1, .barra-2 {
 .barra-2{
     background: var(--cor-rosa);
 }
+
+/* Estilos para telas menores que 1080 pixels */
+
+@media (max-width: 1080px) {
+
+    @import url("stylemobile.css");
+
+  }

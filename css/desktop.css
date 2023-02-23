@@ -1,0 +1,17 @@
+/* Estilos para telas menores que 909 pixels */
+
+@media (max-width: 909px) {
+
+    @import url("./mobilestyle.css");
+
+  }
+
+
+.img-perfil .perfil{
+    width: 270px;
+}
+
+body{
+    
+}
+

@@ -1,0 +1,25 @@
+/* Estilos para telas menores que 909 pixels */
+
+@media (max-width: 909px) {
+
+    @import url("./mobile765.css");
+
+  }
+@media (max-width: 909px) {  
+
+ 
+  .nav-logo img{
+    width: 15rem;
+    padding-bottom: 30px;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+}
+ul{
+    gap: 30px;
+}
+
+
+}
+

@@ -1,0 +1,86 @@
+.nav-logo img{
+    width: 15rem;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;   
+}
+ul li a{
+    color: var(--cor-texto);
+    font-size: 20px;
+}
+.fa-github{
+    font-size: 20px;
+}
+
+
+
+#header-portifolio{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.img-perfil img{
+    width: 90px;
+}
+.sobre-perfil{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.p-inicial{
+    font-size: 30px;
+    color: var(--cor-texto);
+}
+.nome-portifolio{
+    font-size: 50px;
+    color: var(--cor-texto);
+}
+.p-inicial-1{
+    font-size: 20px;
+    color: var(--cor-texto);
+}
+
+
+
+.sobre-min h1{
+    font-size: 50px;
+    color: var(--cor-texto);
+    padding-bottom: 20px;
+    text-align: center;
+}
+.sobre-min p{
+    font-size: 15px;
+    color: var(--cor-texto);
+    padding-left: 15px; 
+    text-align: center;   
+}
+
+
+#lvl-skils h1{
+    font-size: 30px;
+    color: var(--cor-texto);
+}
+.skil_lvl{
+    gap: 10px;
+
+}
+
+.skil_1 p{
+    color: var(--cor-texto);
+    font-weight: 900;
+    padding: 10px;
+    padding-top: 20px;
+    font-size: 15px;
+}
+div .barra-1, .barra-2 {
+    width: 350px;
+    height: 15px;
+    border-radius: 25px;
+}
