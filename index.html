@@ -12,7 +12,8 @@
     <link rel="stylesheet" type="text/css" media="(max-width: 765px)" href="css/mobile765.css"> 
     <link rel="stylesheet" type="text/css" media="(max-width: 636px)" href="css/mobile636.css">     
     <script src="https://unpkg.com/scrollreveal"></script>
-    <title>Document</title>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Luiz Gustavo</title>
 
 </head>
 <body>
@@ -21,18 +22,18 @@
                 <div class="nav-logo"><img class="logo" src="./img/logo.svg" alt="logo do portifolio de luiz gustavo"></div>           
                 <div class="nav-menu">
                     <ul>
-                        <li> <a href="#inicio" class="sobre">Sobre Min</a></li>
-                        <li> <a href="#inicio" class="port">Portifolio</a></li>
-                        <li> <a href="#inicio" class="blog">Blog</a></li>
-                        <li> <a href="#inicio" class="contato">Contato</a></li>
-                        <li><a href="#" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                        <li> <a href="#sobre" class="amenu sobre">Sobre Min</a></li>
+                        <li> <a href="#projects" class="amenu port">Portifolio</a></li>
+                        <li> <a href="#inicio" class="amenu blog">Blog</a></li>
+                        <li> <a href="#contact" class="amenu contato">Contato</a></li>
+                        <li><a href="https://github.com/lgluiz1" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
             </nav>       
    </header>
    <main id="main-do-portifolio">
         <header id="header-portifolio" class="area-1">
-            <div class="img-perfil"> <img src="./img/bn_1.svg" alt="Boneco ilustrativo" class="perfil"></div>
+            <div class="img-perfil"> <img src="./img/bn_1.svg" alt="Boneco ilustrativo" class="animate__bounce perfil "></div>
             <div class="sobre-perfil">
                 <p class="p-inicial">Olá, me chamo</p>
                 <h1 class="nome-portifolio">Luiz Gustavo</h1>
@@ -43,7 +44,7 @@
         <div class="svg-div"><img src="./img/barras.svg" alt=""></div>
    
         <div id="sobre-portifolio" class="area-2">
-            <div class="sobre-min">
+            <div id="sobre" class="sobre-min">
                 <h1>Quem sou eu</h1>
                 <p>Meu nome é Luiz Gustavo e tenho 28 anos. <br> 
                     Moro no Rio de Janeiro, Brasil e sempre fui <br>
@@ -52,19 +53,36 @@
                     caminho como desenvolvedor web. Embora ainda <br>
                     não tenha experiência profissional na área, estou me <br>
                     esforçando para aprender as tecnologias do <br>
-                    Front End e aprimorar minhas habilidades. Estou <br>
-                    dedicado a alcançar meus objetivos e ter uma <br>
-                    carreira bem-sucedida na tecnologia. Eu acredito <br>
-                    que, com dedicação e paixão, posso realizar meus <br>
-                    sonhos e fazer a diferença na indústria de tecnologia.</p>
+                    Front End e aprimorar minhas habilidades. <br>
+                <span>
+                    Ao lado vocês tem algumas das linguagens e Fireworks <br>
+                    que estou estudando para melhora meu aprendizado basta da um <br>
+                    clique nelas e aparecera algumas informaçoes sobre ela <br></span>
+                    <span> Agradeço pela oportunidade de apresentar-me e estou aberto <br>
+                    para esclarecer qualquer dúvida ou fornecer mais informações <br>
+                    sobre mim e minhas habilidades.
+                </span></p>
             </div>
+            
             <div class="skils-portifolio">
-                <div><p>HTML</p></div>
-                <div><p>CSS</p></div>
-                <div><p>REACT</p></div>
-                <div><p>PHP</p></div>
-                <div><p>JAVASCRIPT</p></div>
-                <div><p>PHP</p></div>
+                <div><button class="onbutton">
+                    <p onclick="javascript:html()">HTML</p>
+                </button></div>
+                <div><button class="onbutton">
+                    <p onclick="javascript:css()">CSS</p>
+                </button></div>
+                <div><button class="onbutton">
+                    <p onclick="javascript:react()">REACT</p>
+                </button></div>
+                <div><button class="onbutton">
+                    <p onclick="javascript:jquery()">JQUERY</p>
+                </button></div>
+                <div><button class="onbutton">
+                    <p onclick="javascript:js()">JAVASCRIPT</p>
+                </button></div>
+                <div><button class="onbutton">
+                    <p onclick="javascript:typescript()">TYPESCRIPT</p>
+                </button></div>
             </div>
         </div>
             <div id="lvl-skils" class="area-2">
@@ -105,7 +123,23 @@
                 </div>
             </div>
             <div class="svg-div"><img src="./img/barras_02.svg" alt=""></div>
-    </main>
+        </main>
+        <section>
+            <div id="projects" class="projects">
+                <h1>Meu Projetos</h1>
+                <p>Segue ao lado alguns dos meus projetos <br>
+                    no meu repositorio do Github voce enconta mais <br>
+                    alguns projetos que ja desenvolvir ou esta em desenvolvimento.
+                </p>
+                <a href="https://github.com/lgluiz1" target="_blank"><button class="projects-button"><i class="fa fa-github" aria-hidden="true"></i> Github</button></a>               
+            </div>
+            <div class="slide-projects"></div>
+        </section>
+
+        <footer>
+            
+        </footer>
     <script src="./assets/scrollreveal.js"></script>
+    <script src="./assets/script.js"></script>
 </body>
 </html>

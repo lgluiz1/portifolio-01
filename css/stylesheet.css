@@ -15,7 +15,8 @@
     --cor-verde:#9FB728;
     --cor-java:#5040AD;
     --cor-branca: #fff;
-    --cor-borda:#1262F0;
+    --cor-borda:#00E6FF;
+    --cor-transparente:#ffffff00;
 }
 
 body{
@@ -49,7 +50,27 @@ ul{
 ul li a{
     color: var(--cor-texto);
     font-size: 30px;
+    position: relative;
+    transition: 0.8s ;
 }
+
+ul li a:after{
+    content: "";
+    display: block;
+    height: 3px;
+    position: absolute;
+    background:var(--cor-borda);    
+    width: 0;
+    transition: 0.5s ease-in-out;
+}
+ul li a:hover{
+    color: var(--cor-borda);   
+}
+ul li a:hover:after{
+    width: 100%;
+    box-shadow: rgb(18 119 151) 0px 0.625rem 2.6875rem;
+}
+
 .fa-github{
     font-size: 45px;
 }
@@ -105,6 +126,10 @@ main{
     color: var(--cor-texto);
     padding-left: 15px;    
 }
+.sobre-min p span{
+    display: block;
+    padding-top: 15px;
+}
 .skils-portifolio{
     display: flex;
     flex-wrap: wrap;
@@ -115,6 +140,7 @@ main{
     padding: 5px;
     margin-top: 50px;
 }
+
 .skils-portifolio div{
     width: 150px;
     border: 2px solid var(--cor-borda);
@@ -123,13 +149,25 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.6s;
 
 }
-.skils-portifolio div p{
+.skils-portifolio div button{
+    cursor: pointer;
+    border: 0px solid var(--cor-transparente);
+    background-color: var(--cor-transparente);
+   
+}
+.skils-portifolio div button p{
     padding: 35px;
     color: var(--cor-texto);
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 900;
+}
+.skils-portifolio div:hover{
+    transition: 0s;
+    background-color: #00E6FF;
+    box-shadow: rgb(18 119 151) 0px 0.625rem 2.6875rem;
 }
 #lvl-skils{
     width: 100%;
@@ -179,6 +217,66 @@ div .barra-1, .barra-2 {
 .barra-2{
     background: var(--cor-rosa);
 }
+section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    gap: 30px;
+}
+.projects{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.projects h1{
+    font-size: 60px;
+    color: var(--cor-texto);
+}
+.projects a{
+    width: 150px;
+    height: 50px;
+}
+.projects button{
+    background: var(--cor-texto);
+    color: var(--cor-azul);
+    font-size: 20px;
+    font-weight: 900;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 0px;
+    transition: all 0.3s;
+
+}
+.projects button:hover{
+    background-color: #00E6FF;
+    box-shadow: rgb(18 119 151) 0px 0.625rem 2.6875rem;
+}
+
+.projects p{
+    font-size: 20px;
+    color: var(--cor-texto);
+}
+section .slide-projects{
+    width: 600px;
+    height: 375px;
+    border-radius: 5px;
+    border: 2px solid var(--cor-borda);
+}
+footer{
+    height: 500px;
+}
+
+
 
 /* Estilos para telas menores que 1080 pixels */
 
