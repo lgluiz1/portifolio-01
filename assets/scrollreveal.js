@@ -38,3 +38,35 @@ ScrollReveal().reveal('.slide-projects', { duration: 1000,
         y:80,
         z:0
 } });
+
+ScrollReveal().reveal('.footer__columns__sobre', { duration: 2000, 
+    rotate:{
+        x:50,
+        y:0,
+        z:0
+} });
+
+ScrollReveal().reveal('.footer__input__main', { duration: 2000, 
+    rotate:{
+        x:100,
+        y:0,
+        z:0
+} });
+ScrollReveal().reveal('.footer__columns_input', { duration: 2000, 
+    rotate:{
+        x:100,
+        y:0,
+        z:0
+} });
+ScrollReveal().reveal('.codesquad', { duration: 2000, 
+    rotate:{
+        x:10,
+        y:10,
+        z:20
+} });
+ScrollReveal().reveal('.slide__conteiner', { duration: 2000, 
+    rotate:{
+        x:100,
+        y:10,
+        z:0
+} });
