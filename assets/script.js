@@ -30,7 +30,7 @@ function react(){
             const buttons = document.querySelectorAll('.onbutton');
             console.log(buttons)
             // Cria um objeto Audio com o arquivo de som
-            const soundBtn = new Audio('/assets/mp3/008.mp3')
+            const soundBtn = new Audio('./assets/mp3/008.mp3')
             
             for(let i=0;i<buttons.length;i++){
                  // Adiciona um ouvinte de eventos para o evento mouseover
